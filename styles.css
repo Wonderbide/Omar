@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+body, html {
+    height: 100%;
+    margin: 0;
+    min-width: 200px;
+}
+header{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.head{
+    height: 10%;
+    min-height: 60px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,4,0,1) 46%, rgba(0,0,0,0) 100%);
+    opacity: 0.3;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+}
+
+.inline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.background-image{
+
+    background-image: url("image/paysage.jpeg");
+   
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-start;
+    align-items: left;
+
+    flex-direction: column;
+    justify-content: space-between;
+    filter: brightness(40%);
+
+    z-index: -1;
+
+    position: absolute;
+
+}
+
+h1{
+    border-bottom: whitesmoke solid 1px;
+    margin-right: 60%;
+    margin-bottom: 10px;
+}
+
+h3{
+    margin-right: 60%;
+    margin-bottom: 10px;
+}
+
+
+
+.scroll-button{
+    border: solid whitesmoke solid;
+    background-color: gray;
+    border-radius: 10px;
+
+    width: 50px;
+
+    margin: 15px;
+
+    display: flex;
+    justify-content: center;
+
+    text-decoration: none;
+
+    color:whitesmoke;
+    background-color:black;
+    opacity: 0,9;
+}
+
+
+.header-presentation{
+    margin-left: 15px;
+    color: whitesmoke;
+    font-size: 2em;
+    position: absolute;
+}
+
+.direction{
+    font-size: 5px;
+}
+
+.header-presentation__text{
+    margin-left: 30px;
+    color: whitesmoke;
+    font-size: 1.1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 10%;
+}
+
+
+h1{
+    text-decoration: whitesmoke;
+}
+
+.icon-contact{
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+
+
+.dispatcher{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+}
+
+
+.vignette, .dispatcher{
+    height: 100%;
+}
+
+.vignette{
+    /*border: black solid 4px;*/
+    width: 33%;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.button, .dispatcher{
+    height: 100%;
+    width: 100%;
+}
+
+.button{
+    background-image: url("image/portraitTest.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+    position: absolute;
+    z-index: -1;
+    filter: blur(5px) brightness(30%);
+    transition: 0.45s;
+}
+
+.goal-button{
+    background-image: url("image/goal.jpeg");
+    
+}
+
+.bio-button{
+    background-image: url("image/bio.jpeg");
+}
+
+.interest-button{
+    background-image: url("image/personal-interest.jpeg");
+}
+
+
+
+
+.title{
+    position: absolute;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2.5em;
+
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::-webkit-scrollbar{
+    width: 0.45rem;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--bg-primary);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color:gray;
+}
+
+.vignette:hover .button{
+  filter: blur(0px) brightness(45%);
+
+}
+
+@keyframes myfirst {
+    0%   {left: 0px; top: 0px;}
+    50%  { left: 50px; top: 0px;}
+    100%   {left: 0px; top: 0px;}
+  }
