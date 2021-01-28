@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px black;
 }
 html {
     scroll-behavior: smooth;
@@ -21,12 +22,18 @@ header{
     justify-content: space-between;
 }
 
+.head-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .head{
-    height: 10%;
+    height: 17%;
     min-height: 60px;
     width: 100%;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,4,0,1) 46%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg , black, #000405, transparent);
     opacity: 0.3;
     display: flex;
     flex-direction: column;
@@ -38,8 +45,16 @@ header{
 }
 
 .logo{
-    height: 50px;
-    width: 50px;
+    height: 7.5vh;
+    width: 7.5vh;
+    margin: 2vh;
+}s
+
+.facebook{
+    height: 7.5vh;
+    width: 7.5vh;
+    margin: 2vh;
+
 }
 
 .inline{
@@ -47,8 +62,6 @@ header{
     flex-direction: row;
     align-items: center;
 }
-
-
 
 .background-image{
 
@@ -66,7 +79,7 @@ header{
 
     flex-direction: column;
     justify-content: space-between;
-    filter: brightness(40%);
+    filter: brightness(62%);
 
     z-index: -1;
 
@@ -85,14 +98,13 @@ h3{
     margin-bottom: 10px;
 }
 
-
-
 .scroll-button{
     border: solid whitesmoke solid;
-    background-color: gray;
+    background-color: white;
     border-radius: 10px;
 
-    width: 50px;
+    width: 3vh;
+    height: 3vh;
 
     margin: 15px;
 
@@ -101,11 +113,13 @@ h3{
 
     text-decoration: none;
 
-    color:whitesmoke;
-    background-color:black;
-    opacity: 0,9;
-}
+    color:black;
 
+    opacity: 0,9;
+
+    display: flex;
+    align-items: center;
+}
 
 .header-presentation{
     margin-left: 15px;
@@ -115,7 +129,9 @@ h3{
 }
 
 .direction{
-    font-size: 5px;
+    font-size: 9px;
+    font-weight: bolder;
+    text-shadow: none;
 }
 
 .header-presentation__text{
@@ -135,10 +151,13 @@ h1{
     text-decoration: whitesmoke;
 }
 
+
+
 .icon-contact{
-    height: 10%;
+    height: 23%;
+    min-height: 60px;
     width: 100%;
-    background-color: black;
+    background: linear-gradient(0deg, black, #000405, transparent);
     opacity: 0.3;
 }
 
@@ -193,9 +212,6 @@ h1{
     background-image: url("image/personal-interest.jpeg");
 }
 
-
-
-
 .title{
     position: absolute;
     color: whitesmoke;
@@ -208,6 +224,12 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s;
+
+}
+
+.slogan{
+    color: white;
 }
 
 body::-webkit-scrollbar{
@@ -219,13 +241,35 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color:gray;
+    background-color:white;
 }
 
 .vignette:hover .button{
-  filter: blur(0px) brightness(45%);
-
+  filter: blur(0px) brightness(60%);
+  font-size: larger;
 }
+
+.vignette:hover .title{
+    text-decoration: underline;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
 
 @keyframes myfirst {
     0%   {left: 0px; top: 0px;}
