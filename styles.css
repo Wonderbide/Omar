@@ -89,7 +89,6 @@ header{
 
 h1{
     border-bottom: whitesmoke solid 1px;
-    margin-right: 60%;
     margin-bottom: 10px;
 }
 
@@ -146,13 +145,6 @@ h3{
     margin-top: 10%;
 }
 
-
-h1{
-    text-decoration: whitesmoke;
-}
-
-
-
 .icon-contact{
     height: 23%;
     min-height: 60px;
@@ -167,7 +159,7 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    position: absolute;
+
 }
 
 
@@ -197,6 +189,11 @@ h1{
     z-index: -1;
     filter: blur(5px) brightness(30%);
     transition: 0.45s;
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+-moz-transition: all 1s ease; /* Firefox */
+-ms-transition: all 1s ease; /* Internet Explorer 9 */
+-o-transition: all 1s ease; /* Opera */
+transition: all 1s ease;
 }
 
 .goal-button{
@@ -241,13 +238,19 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color:white;
+    background-color:gray;
 }
 
 .vignette:hover .button{
   filter: blur(0px) brightness(60%);
   font-size: larger;
+  -webkit-transform:scale(1.05); /* Safari et Chrome */
+-moz-transform:scale(1.05); /* Firefox */
+-ms-transform:scale(1.05); /* Internet Explorer 9 */
+-o-transform:scale(1.05); /* Opera */
+transform:scale(1.05);
 }
+
 
 .vignette:hover .title{
     text-decoration: underline;
@@ -271,8 +274,47 @@ body::-webkit-scrollbar-thumb{
     color: white;
   }
 
-@keyframes myfirst {
-    0%   {left: 0px; top: 0px;}
-    50%  { left: 50px; top: 0px;}
-    100%   {left: 0px; top: 0px;}
+  .tuile{
+    min-width: 100vw;
+    min-height: 100vh;
   }
+
+  .page-content{
+      max-width: 580px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: justify;
+
+      margin-top: 50px;
+  }
+
+  .page-content{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+  }
+
+  .p1{
+      overflow: hidden;
+      margin-bottom: 10px;
+  }
+
+  .page-content > p, h1, h2{
+    text-shadow: none;
+  }
+
+  
+  .gif{
+  width: 300px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+h2{
+    margin-bottom: 10px;
+}
